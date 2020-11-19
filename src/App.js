@@ -5,7 +5,6 @@ import PageNotFound from "./PageNotFound";
 import Order from "./Order";
 import Orders from "./Orders";
 import MyOrders from "./MyOrders";
-import Modal from "./Modal";
 import { useState } from "react";
 import { addDeal, removeDeal, saveDeal } from "./fetchCalls";
 import Ordered from "./Ordered";
@@ -18,7 +17,7 @@ function App() {
       restaurant: "Dulce",
       price: "$6.99",
       description:
-        "angus beef, American cheese, fried onions, and sriracha mayo all sandwiched between two sesame seed buns. oh, and some delish waffle-cut fries",
+        "angus beef, American cheese, fried onions, and sriracha mayo all sandwiched between two sesame seed buns. oh, and some delish waffle-cut fries.",
       notes: "",
       src:
         "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/2/0/TM2817_Mexi-Mac-Burgers.jpg.rend.hgtvcom.826.620.suffix/1552666964601.jpeg",
@@ -114,7 +113,6 @@ function App() {
       <Switch>
         <Route path="/" exact={true}>
           <Home />
-          <Modal />
         </Route>
         <Route path="/orders" exact={true}>
           <Orders orders={orders} />

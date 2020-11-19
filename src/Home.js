@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "./pictures/pomegranate.svg";
 import omid from "./pictures/moi.png";
-import Modal from "./Modal";
 
 export default function Home() {
   return (

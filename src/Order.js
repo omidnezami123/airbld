@@ -98,7 +98,6 @@ export default function Order({ orders, addOrder }) {
               src: order.src,
             }}
             onSubmit={async (values) => {
-              // await sleep(500);
               addOrder(values);
               alert(
                 `Added ${order.title} to My Orders. \nThe chefs at ${order.restaurant} have been notified to do the following: ${values.notes}`

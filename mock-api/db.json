@@ -5,9 +5,18 @@
       "title": "Burger 'n Fries",
       "restaurant": "Dulce",
       "price": "$6.99",
-      "description": "angus beef, American cheese, fried onions, and sriracha mayo all sandwiched between two sesame seed buns. oh, and some delish waffle-cut fries",
+      "description": "angus beef, American cheese, fried onions, and sriracha mayo all sandwiched between two sesame seed buns. oh, and some delish waffle-cut fries.",
       "notes": "",
       "src": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/2/0/TM2817_Mexi-Mac-Burgers.jpg.rend.hgtvcom.826.620.suffix/1552666964601.jpeg"
+    },
+    {
+      "id": "2",
+      "title": "Collard Greens",
+      "restaurant": "Honeybird",
+      "price": "$1.99",
+      "description": "classic collard greens cooked low and slow, just like mama made 'em.",
+      "notes": "Extra blueberries",
+      "src": "https://www.seriouseats.com/recipes/images/2017/02/20170217-vegan-collard-greens-vicky-wasik-6-1500x1125.jpg"
     }
   ]
 }

@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import logo from "./pictures/pomegranate.svg";
 import { Formik, Field, Form } from "formik";
 
-export default function Ordered({ orders, editOrder, deleteOrder, setOrders }) {
+export default function Ordered({ orders, editOrder, deleteOrder }) {
   const { id } = useParams();
   const order = orders.find((orderr) => {
     return orderr.id === Number(id);

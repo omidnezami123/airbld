@@ -35,5 +35,5 @@ test("see deals link refreshes page", () => {
 test("my orders link works", () => {
   const { getByTestId } = render(<Orders orders={orders} />);
 
-  fireEvent.click(getByTestId("myorders"));
+  fireEvent.click(getByTestId("mydeals"));
 });

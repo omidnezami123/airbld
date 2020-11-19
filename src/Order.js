@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import logo from "./pictures/pomegranate.svg";
 import { Formik, Field, Form } from "formik";
 import Navigation from "./Navigation";
 

@@ -26,11 +26,11 @@ export default function Modal({ restaurantName, description, slogan }) {
                     <p className="item-intro text-muted">
                       Located in the USC Village
                     </p>
-                    <img
+                    {/* <img
                       className="img-fluid d-block mx-auto"
                       src="img/portfolio/01-full.jpg"
                       alt=""
-                    />
+                    /> */}
                     <p>
                       We serve the finest specialty coffees &amp; teas, along
                       with fresh salads, sandwiches and baked goods made

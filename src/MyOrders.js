@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "./pictures/pomegranate.svg";
+import { fetchDeals } from "./fetchCalls";
 
 export default function MyOrders() {
+  const [myOrders, setMyOrders] = useState([]);
+  useEffect(() => {
+    fetchDeals().then((orders) => {
+      setMyOrders(orders);
+    });
+  }, []);
+  console.log(myOrders);
   return (
     <>
       <title>My Orders</title>
@@ -50,6 +58,24 @@ export default function MyOrders() {
         </div>
       </nav>
       <div></div>
+      <ul
+        className="list-group mt-5"
+        style={{ position: "relative", top: "100px" }}
+      >
+        {myOrders.map((order) => {
+          return (
+            <li
+              key={order.id}
+              className="list-group-item d-flex justify-content-between"
+            >
+              <a href={`/ordered/${order.id}`}>{order.title}</a>
+              <div>
+                <span className="badge badge-pill text-white"></span>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
     </>
   );
 }

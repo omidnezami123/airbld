@@ -171,9 +171,6 @@ export default function Home() {
                   </div>
                 </div>
                 <img
-                  // style={{
-                  //   cursor: "zoom-in;",
-                  // }}
                   width="440"
                   height="400"
                   className="img-fluid"
@@ -347,11 +344,11 @@ export default function Home() {
                     <p className="item-intro text-muted">
                       Address: 2316 S Union Ave, Los Angeles, CA 90007
                     </p>
-                    <img
+                    {/* <img
                       className="img-fluid d-block mx-auto"
                       src="img/portfolio/02-full.jpg"
                       alt=""
-                    />
+                    /> */}
                     <p>
                       Counter-serve coffeehouse with juices, light fare &amp;
                       pastries in a high-ceilinged, industrial space
@@ -400,11 +397,11 @@ export default function Home() {
                     <p className="item-intro text-muted">
                       Located in USC Village
                     </p>
-                    <img
+                    {/* <img
                       className="img-fluid d-block mx-auto"
                       src="img/portfolio/03-full.jpg"
                       alt=""
-                    />
+                    /> */}
                     <p>
                       CAVA focuses on real food with vibrant ingredients, gutsy
                       flavors, and a whole lot of variety. Offering up a menu of
@@ -454,11 +451,11 @@ export default function Home() {
                     <p className="item-intro text-muted">
                       Located in the USC Village
                     </p>
-                    <img
+                    {/* <img
                       className="img-fluid d-block mx-auto"
                       src="img/portfolio/04-full.jpg"
                       alt=""
-                    />
+                    /> */}
                     <p>
                       Inspired by the Southern table, Honeybird serves up
                       handcrafted comfort food featuring our golden fried
@@ -510,11 +507,11 @@ export default function Home() {
                     <p className="item-intro text-muted">
                       Located in the USC Village
                     </p>
-                    <img
+                    {/* <img
                       className="img-fluid d-block mx-auto"
                       src="img/portfolio/05-full.jpg"
                       alt=""
-                    />
+                    /> */}
                     <p>
                       Located in the heart of USC Village, Greenleaf Gourmet
                       ChopShop is an award-winning fast casual restaurant
@@ -565,11 +562,11 @@ export default function Home() {
                     <p className="item-intro text-muted">
                       Located in USC Village
                     </p>
-                    <img
+                    {/* <img
                       className="img-fluid d-block mx-auto"
                       src="img/portfolio/06-full.jpg"
                       alt=""
-                    />
+                    /> */}
                     <p>
                       At SunLife Organics, we only use the highest quality
                       organic ingredients in our superfood smoothies, bowls,

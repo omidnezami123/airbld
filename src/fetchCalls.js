@@ -1,6 +1,6 @@
 //GET request
 export function fetchDeals() {
-  return fetch("/airbld-myorders").then((res) => {
+  return fetch("/api/airbld-myorders").then((res) => {
     if (res.status >= 400) {
       return Promise.reject(`There was an error with loading the deals`);
     }
@@ -10,7 +10,7 @@ export function fetchDeals() {
 
 //PUT request
 export function saveDeal(data) {
-  const url = `/airbld-myorders/${data.id}`;
+  const url = `/api/airbld-myorders/${data.id}`;
   const method = "put";
 
   return fetch(url, {
@@ -26,7 +26,7 @@ export function saveDeal(data) {
 
 //POST request
 export function addDeal(data) {
-  const url = `/airbld-myorders`;
+  const url = `/api/airbld-myorders`;
   const method = "post";
 
   return fetch(url, {
@@ -48,7 +48,7 @@ export function addDeal(data) {
 
 //DELETE request
 export function removeDeal(id) {
-  return fetch(`/airbld-myorders/${id}`, {
+  return fetch(`/api/airbld-myorders/${id}`, {
     method: "DELETE",
   });
 }

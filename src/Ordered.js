@@ -2,14 +2,13 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import logo from "./pictures/pomegranate.svg";
 import { Formik, Field, Form } from "formik";
-import { saveDeal, removeDeal } from "./fetchCalls";
 
-export default function Ordered({ orders, editOrder, deleteOrder }) {
-  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+export default function Ordered({ orders, editOrder, deleteOrder, setOrders }) {
   const { id } = useParams();
   const order = orders.find((orderr) => {
     return orderr.id === Number(id);
   });
+
   return (
     <>
       <title>Order {id}</title>
@@ -98,7 +97,6 @@ export default function Ordered({ orders, editOrder, deleteOrder }) {
               src: order.src,
             }}
             onSubmit={async (values) => {
-              //   await sleep(500);
               editOrder(values);
               alert(`${order.title} Edited`);
             }}
@@ -106,7 +104,7 @@ export default function Ordered({ orders, editOrder, deleteOrder }) {
             {({ isSubmitting }) => (
               <Form>
                 <label htmlFor="notes">Notes</label>
-                <Field name="notes" placeholder="Notes for Restaurant?" />
+                <Field name="notes" placeholder="Add/Edit a note?" />
                 <div></div>
                 <button
                   className="btn btn-primary btn-xl text-uppercase js-scroll-trigger"

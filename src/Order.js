@@ -2,10 +2,8 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import logo from "./pictures/pomegranate.svg";
 import { Formik, Field, Form } from "formik";
-import { saveDeal, addDeal } from "./fetchCalls";
 
 export default function Order({ orders, addOrder }) {
-  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   const { id } = useParams();
   const order = orders.find((orderr) => {
     return orderr.id === Number(id);

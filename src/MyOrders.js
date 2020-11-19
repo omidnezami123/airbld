@@ -9,7 +9,6 @@ export default function MyOrders() {
       setMyOrders(orders);
     });
   }, []);
-  console.log(myOrders);
   return (
     <>
       <title>My Orders</title>

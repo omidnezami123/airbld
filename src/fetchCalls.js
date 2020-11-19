@@ -2,7 +2,7 @@
 export function fetchDeals() {
   return fetch("/airbld-myorders").then((res) => {
     if (res.status >= 400) {
-      return Promise.reject(`There was an error with loading the playlists`);
+      return Promise.reject(`There was an error with loading the deals`);
     }
     return res.json();
   });
@@ -35,9 +35,15 @@ export function addDeal(data) {
     headers: {
       "Content-Type": "application/json",
     },
-  }).then((response) => {
-    return response.json();
-  });
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .catch(() =>
+      alert(
+        `Oops! It seems that ${data.restaurant} has run out of ${data.title}. Sorry!`
+      )
+    );
 }
 
 //DELETE request

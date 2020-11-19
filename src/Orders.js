@@ -1,17 +1,21 @@
 import React from "react";
 import logo from "./pictures/pomegranate.svg";
 
-export default function Orders({ orders, setorders }) {
+export default function Orders({ orders }) {
   return (
     <>
-      <title>My Orders</title>
+      <title>Orders</title>
       <nav
         className="navbar navbar-expand-lg navbar-dark fixed-top"
         id="mainNav"
         style={{ backgroundColor: "black" }}
       >
         <div className="container">
-          <a className="navbar-brand js-scroll-trigger" href="/">
+          <a
+            className="navbar-brand js-scroll-trigger"
+            href="/"
+            data-testid="home"
+          >
             <img
               src={logo}
               alt="AirBLD Logo"
@@ -36,12 +40,20 @@ export default function Orders({ orders, setorders }) {
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav text-uppercase ml-auto">
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="/orders">
+                <a
+                  className="nav-link js-scroll-trigger"
+                  href="/orders"
+                  data-testid="seedeals"
+                >
                   See Deals
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="/myorders">
+                <a
+                  className="nav-link js-scroll-trigger"
+                  href="/myorders"
+                  data-testid="myorders"
+                >
                   My Orders
                 </a>
               </li>
@@ -59,6 +71,7 @@ export default function Orders({ orders, setorders }) {
             <li
               key={order.id}
               className="list-group-item d-flex justify-content-between"
+              data-testid="details"
             >
               <a href={`/order/${order.id}`}>{order.title}</a>
               <div>

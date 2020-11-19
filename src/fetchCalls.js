@@ -26,7 +26,7 @@ export function saveDeal(data) {
 
 //POST request
 export function addDeal(data) {
-  const url = `/api/airbld-myorders`;
+  const url = "/api/airbld-myorders";
   const method = "post";
 
   return fetch(url, {

@@ -20,6 +20,7 @@ export default function Home() {
               href="#page-top"
               id="logo"
               width="25%"
+              data-testid="home"
             />
           </a>
           <button
@@ -52,7 +53,11 @@ export default function Home() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="/orders">
+                <a
+                  className="nav-link js-scroll-trigger"
+                  href="/orders"
+                  data-testid="seedealslink"
+                >
                   See Deals
                 </a>
               </li>
@@ -83,6 +88,7 @@ export default function Home() {
               <a
                 className="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
                 href="/orders"
+                data-testid="seedealsbtn"
               >
                 See deals
               </a>
@@ -163,6 +169,7 @@ export default function Home() {
                 className="portfolio-link"
                 data-toggle="modal"
                 href="#portfolioModal1"
+                data-testid="modal"
               >
                 <div className="portfolio-hover">
                   <div className="portfolio-hover-content">
@@ -340,12 +347,7 @@ export default function Home() {
                     <p className="item-intro text-muted">
                       Located in the USC Village
                     </p>
-                    {/* <img
-                      className="img-fluid d-block mx-auto"
-                      src="img/portfolio/01-full.jpg"
-                      alt=""
-                    /> */}
-                    <p>
+                    <p data-testid="description">
                       We serve the finest specialty coffees &amp; teas, along
                       with fresh salads, sandwiches and baked goods made
                       in-house daily! Our signature items include DULCE lattes,
@@ -362,6 +364,7 @@ export default function Home() {
                       className="btn btn-primary"
                       data-dismiss="modal"
                       type="button"
+                      data-testid="close"
                     >
                       <i className="fas fa-times" />
                       Close{" "}

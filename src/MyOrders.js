@@ -26,6 +26,7 @@ export default function MyOrders() {
               href="#page-top"
               id="logo"
               width="15%"
+              data-testid="home"
             />
           </a>
           <button
@@ -43,12 +44,20 @@ export default function MyOrders() {
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav text-uppercase ml-auto">
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="/orders">
+                <a
+                  className="nav-link js-scroll-trigger"
+                  href="/orders"
+                  data-testid="seedeals"
+                >
                   See Deals
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="/myorders">
+                <a
+                  className="nav-link js-scroll-trigger"
+                  href="/myorders"
+                  data-testid="mydeals"
+                >
                   My Orders
                 </a>
               </li>
@@ -67,7 +76,9 @@ export default function MyOrders() {
               key={order.id}
               className="list-group-item d-flex justify-content-between"
             >
-              <a href={`/ordered/${order.id}`}>{order.title}</a>
+              <a href={`/ordered/${order.id}`} data-testid="details">
+                {order.title}
+              </a>
               <div>
                 <span className="badge badge-pill text-white"></span>
               </div>
